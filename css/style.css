@@ -9,8 +9,31 @@
 .fw-medium {
     font-weight: 600 !important;
 }
+.cacs{
+    --bs-gutter-x: -5.5rem !important; 
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 .txtb{
-    bottom: 220px;
+    bottom: 343px;
 }
 .h5a{
     font-size: 1rem;
@@ -21,12 +44,19 @@ width: 100% !important;
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
-    bottom: 45px;
+    right: 6px;
+    bottom: 12px;
     z-index: 99;
 }
 
-
+.txt{
+    font-size: 1.5rem !important;
+}
+.imglogo{
+    width: 90px;
+    border-radius: 204px;
+  
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -160,25 +190,8 @@ width: 100% !important;
 
 
 /*** Header ***/
-.header-carousel .container,
-.page-header .container {
-    position: relative;
-    padding: 45px 0 45px 35px;
-    border-left: 15px solid #FFFFFF;
-}
 
-.header-carousel .container::before,
-.header-carousel .container::after,
-.page-header .container::before,
-.page-header .container::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 15px;
-    background: #FFFFFF;
-}
+
 
 .header-carousel .container::after,
 .page-header .container::after {
@@ -196,6 +209,10 @@ width: 100% !important;
     }
     .txt{
         margin-bottom: 10px !important;
+        font-size: 1rem !important;
+    }
+    .txt2{
+        font-size: 1.8rem !important;
     }
     .header-carousel .owl-carousel-item img {
         position: absolute;
@@ -209,7 +226,9 @@ width: 100% !important;
         font-size: 14px !important;
         font-weight: 400 !important;
     }
-
+    .imglogo{
+        width: 50px;
+    }
     .header-carousel .owl-carousel-item h1 {
         font-size: 30px;
         font-weight: 600;
@@ -259,11 +278,14 @@ width: 100% !important;
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/limpieza-tienda.jpg) center center no-repeat;
     background-size: cover;
 }
 
-
+.imgtbj{
+    width: 200px !important;
+    height: 200px !important;
+}
 /*** Service ***/
 .service-item-top img {
     transition: .5s;
