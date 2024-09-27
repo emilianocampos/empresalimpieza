@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>ECO limpia -  Servicios integrales de limpieza para Empresas</title>
+    <title>Servicios integrales de limpieza para empresas - ECO limpia</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -113,10 +113,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav me-auto">
             <a href="index.html" class="nav-item nav-link active">Inicio</a>
-            <a href="about.html" class="nav-item nav-link">Nuestra empresa</a>
-            <a href="service.html" class="nav-item nav-link">Servicios</a>
+            <a href="#empresa" class="nav-item nav-link">Nuestra empresa</a>
+            <a href="#servicio" class="nav-item nav-link">Servicios</a>
 
-            <a href="#" class="nav-item nav-link">Servicio domestico</a>
+            <a href="service.html" class="nav-item nav-link">Servicio domestico</a>
 
             <a href="#contacto" class="nav-item nav-link">Contacto</a>
           </div>
@@ -337,6 +337,85 @@
         </div>
       </div>
     </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video controls>
+            <source src="./img/v1.mp4" type="video/mp4" style="height: 500px;"/>
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video controls>
+            <source src="./img/v2.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video controls>
+            <source src="./img/v3.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video controls>
+            <source src="./img/v4.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+         <div class="swiper-slide">
+          <img src="./img/f5.jpeg" alt="">
+         </div>
+        <div class="swiper-slide">
+          <img src="./img/z.jpeg" alt="">
+        </div>
+          <div class="swiper-slide">
+            <img src="./img/x.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/ñ.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/l.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/k.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/j.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/h.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/g.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/f.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/d.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/p.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/o.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/u.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/y.jpeg" alt="">
+          </div>
+      </div>
+      <!-- Botones de navegación y paginación (opcional) -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <!-- About End -->
 
     <!-- Fact Start -->
@@ -850,6 +929,22 @@
     ></a>
 
     <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1, // Muestra 1 slide a la vez
+    spaceBetween: 0, // Espacio entre slides
+    loop: true, // Reproduce en bucle
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // Activa la paginación
+    },
+    navigation: {
+      nextEl: ".swiper-button-next", // Botón siguiente
+      prevEl: ".swiper-button-prev", // Botón anterior
+    },
+  });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
