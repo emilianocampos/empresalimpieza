@@ -121,7 +121,17 @@ width: 100% !important;
     transition: .5s;
     z-index: 9999;
 }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 8px;
+    z-index: 100;
+  }
 
+  .whatsapp-float img {
+    width: 48px;
+    height: 48px;
+  }
 .nav-bar.sticky-top {
     position: sticky;
     padding: 0;
