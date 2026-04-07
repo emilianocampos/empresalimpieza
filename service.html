@@ -59,32 +59,30 @@
     </div>
     <!-- Spinner End -->
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/3884201959" class="whatsapp-float shadow-lg" target="_blank" aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light d-none d-lg-block">
-      <div class="row align-items-center top-bar">
-        <div class="col-lg-3 col-md-12 text-center text-lg-start">
-          <a href="" class="navbar-brand m-0 p-0">
-            <img src="./img/logo2.jpg" alt="" class="img-fluid imglogo" />
-          </a>
-        </div>
-        <div class="col-lg-9 col-md-12 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <i class="fas fa-phone text-primary me-2"></i>
-            <p class="m-0">0388 314-9575</p>
+    <div class="container-fluid bg-dark text-light d-none d-lg-block py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-start">
+            <div class="d-inline-flex align-items-center me-4">
+              <i class="fas fa-phone-alt text-secondary me-2"></i>
+              <small>0388-154499915</small>
+            </div>
+            <div class="d-inline-flex align-items-center">
+              <i class="far fa-envelope text-secondary me-2"></i>
+              <small>ecoserviciodelimpieza@outlook.com</small>
+            </div>
           </div>
-
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <i class="far fa-envelope-open text-primary me-2"></i>
-            <p class="m-0">confortar.oficial@gmail.com</p>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-
-            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
+          <div class="col-lg-4 text-end">
+            <div class="d-inline-flex align-items-center">
+              <a class="btn btn-sm-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-sm-square btn-outline-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -92,251 +90,188 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid nav-bar bg-light">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4"
-      >
-        <a
-          href=""
-          class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none"
-        >
-          <img src="./img/logo2.jpg" alt="" class="img-fluid imglogo" />
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm glass-morphism py-2 px-4">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="./img/logo.jpg" alt="Eco Limpia Logo" class="imglogo me-2" />
+          <span class="h4 m-0 text-primary fw-bold d-none d-sm-inline">ECO <span class="text-secondary">LIMPIA</span></span>
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span class="fa fa-bars"></span>
+          <span class="fa fa-bars text-primary"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav me-auto">
-            <a href="index.html" class="nav-item nav-link active">Inicio</a>
-            <a href="#empresa" class="nav-item nav-link">Nuestra empresa</a>
-            <a href="#servicio" class="nav-item nav-link">Servicios</a>
-
-            <a href="service.html" class="nav-item nav-link"
-              >Servicio domestico</a
-            >
-
-            <a href="#contacto" class="nav-item nav-link">Contacto</a>
-            
+          <div class="navbar-nav ms-auto py-4 py-lg-0">
+            <a href="index.html" class="nav-item nav-link">Inicio</a>
+            <a href="index.html#empresa" class="nav-item nav-link">Empresa</a>
+            <a href="index.html#servicio" class="nav-item nav-link">Servicios</a>
+            <a href="service.html" class="nav-item nav-link active">Doméstico</a>
+            <a href="index.html#contacto" class="nav-item nav-link">Contacto</a>
           </div>
-          <div
-            class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center"
-          >
-            <div
-              class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-              style="width: 45px; height: 45px"
-            >
-              <i class="fa fa-phone-alt text-primary"></i>
-            </div>
-            <div class="ms-3">
-              <p class="mb-1 text-white">Celular</p>
-              <h5 class="m-0 text-secondary">0388-154499915</h5>
-            </div>
-          </div>
+          <a href="index.html#contacto" class="btn btn-premium ms-lg-4 d-none d-lg-block">Solicitar Presupuesto</a>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 py-5">
-      <div class="container">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">
-          Servicio domestico
-        </h1>
+    <div class="container-fluid page-header mb-5 py-5" style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5)), url('img/limpia1.jpeg') center center no-repeat; background-size: cover;">
+      <div class="container py-5">
+        <h1 class="display-3 text-white fw-bold mb-3 animated slideInDown">Servicio Doméstico</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Doméstico</li>
+            </ol>
+        </nav>
       </div>
     </div>
     <!-- Page Header End -->
+
     <div class="container-xxl py-5">
       <div class="container">
-        <div class="row g-5">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          
-            <h6 class="text-secondary text-uppercase">Que hacemos?</h6>
-            <h1 class="mb-4">
-              Limpieza profesional de departamentos, casas y oficinas
-            </h1>
-            <p class="mb-4">
-              Seguimos presentando SERVICIOS PERSONALIZADOS 👌🏻 <br> 🌀 Limpieza
-              artefactos de COCINA 🧼 <br> 🌀 Limpieza completa de HELADERAS 🧽 
-             
-
+            <h6 class="text-secondary text-uppercase fw-bold mb-3">¿Qué hacemos?</h6>
+            <h1 class="mb-4">Limpieza Profesional de Departamentos y Casas</h1>
+            <p class="mb-4 text-muted">
+              Brindamos servicios personalizados de alta calidad para que disfrutes de tu hogar sin preocuparte por la limpieza. Nuestro equipo está altamente capacitado y referenciado.
             </p>
-
-            <button class="btn btn-primary w-70 py-3" type="submit" >
-             <a href="contacto " style="color: rgb(41, 243, 75);">
-              ☑️ ¡PEDÍ TU SERVICIO HOY!
-             </a> 
-            </button>
-       
-            <div class="d-flex align-items-center p-4 mt-5">
-              <div
-                class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                style="width: 60px; height: 60px"
-              >
-               
-              </div>
-           
+            <div class="bg-light p-4 rounded mb-4">
+                <div class="d-flex mb-3">
+                    <i class="fa fa-snowflake text-primary me-3 mt-1"></i>
+                    <p class="mb-0">Limpieza profunda de artefactos de COCINA</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa fa-snowflake text-primary me-3 mt-1"></i>
+                    <p class="mb-0">Limpieza completa de HELADERAS y electrodomésticos</p>
+                </div>
             </div>
+            <a href="https://wa.me/3884201959" class="btn btn-premium py-3 px-5">¡PEDÍ TU SERVICIO HOY!</a>
           </div>
-          <div class="col-lg-6 pt-4" style="min-height: 500px">
-            <div
-              class="position-relative h-100 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/w1 (7).jpeg"
-                style="object-fit: cover; padding: 0 0 50px 100px"
-                alt=""
-              />
-              <img
-                class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
-                src="img/w1 (6).jpeg"
-                style="object-fit: cover"
-                alt=""
-              />
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/w1 (7).jpeg">
+              </div>
+              <div class="col-6">
+                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/w1 (6).jpeg">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./img/w1 (1).jpeg" alt="">
-         </div>
-        <div class="swiper-slide">
-          <img src="./img/w1 (2).jpeg" alt="">
-        </div>
-          <div class="swiper-slide">
-            <img src="./img/w1 (3).jpeg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/w1 (4).jpeg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/w1 (5).jpeg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/w1 (6).jpeg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/asd (1).jpeg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/asd (2).jpeg" alt="">
-          </div>
-          </div>
-      </div>
-      <!-- Botones de navegación y paginación (opcional) -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="container-fluid my-5 px-0 mt-11">
-     
-      <div class="row justify-content-center cacs">
-        <div class="col-lg-8">
-          <div class="bg-light text-center p-5">
-            <h1 class="mb-4">Comenzemos a trabajar juntos </h1>
-            <form>
-              <div class="row g-3">
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control border-0"
-                    placeholder="Nombre"
-                    style="height: 55px"
-                  />
-                </div>
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control border-0"
-                    placeholder="Empresa"
-                    style="height: 55px"
-                  />
-                </div>
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="email"
-                    class="form-control border-0"
-                    placeholder="Email"
-                    style="height: 55px"
-                  />
-                </div>
-                
-                
-                <div class="col-12">
-                  <textarea
-                    class="form-control border-0"
-                    placeholder="Mensaje..."
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary w-100 py-3" type="submit">
-                    Enviar
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div
-  class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-  data-wow-delay="0.1s"
->
-  <div class="container py-5">
-    <div class="row g-5">
-      <div class="col-lg-3 col-md-6">
-        <h4 class="text-light mb-4">Contacto</h4>
-        
-        <p class="mb-2">
-          <i class="fa fa-phone-alt me-3"></i> 0388-154499915
-        </p>
-        <p class="mb-2">
-          <i class="fa fa-envelope me-3"></i>confortar.oficial@gmail.com
 
-        </p>
-        <div class="d-flex pt-2">
-          <a class="btn btn-outline-light btn-social" href=""
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a class="btn btn-outline-light btn-social" href=""
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          
+    <!-- Gallery Start -->
+    <div class="container-xxl py-5 px-0">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/w1 (1).jpeg" alt="Gallery 1"></div>
+            <div class="swiper-slide"><img src="./img/w1 (2).jpeg" alt="Gallery 2"></div>
+            <div class="swiper-slide"><img src="./img/w1 (3).jpeg" alt="Gallery 3"></div>
+            <div class="swiper-slide"><img src="./img/w1 (4).jpeg" alt="Gallery 4"></div>
+            <div class="swiper-slide"><img src="./img/w1 (5).jpeg" alt="Gallery 5"></div>
+            <div class="swiper-slide"><img src="./img/asd (1).jpeg" alt="Gallery 6"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
-      
-     
-      
     </div>
-  </div>
-  <div class="container">
-    <div class="copyright">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          &copy; <a class="border-bottom" href="#">Eco limpia</a>, Todos los derechos reservados.
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  <a href="https://wa.me/543884201959" class="whatsapp-float" target="_blank">
-    <img src="./img/icons8-whatsapp-48.png" alt="WhatsApp">
-</a>
+    <!-- Gallery End -->
 
-</div>
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="bg-light p-5 rounded-4 shadow-sm text-center">
+            <h2 class="mb-4">¿Necesitas un presupuesto personalizado?</h2>
+            <p class="mb-5 lead">Cuéntanos sobre tus necesidades y te enviaremos una propuesta a medida.</p>
+            <a href="index.html#contacto" class="btn btn-premium btn-lg py-3 px-5">Contactar Ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Contacto</h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>San Salvador de Jujuy, Jujuy</p>
+            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>3884201959</p>
+            <p class="mb-2"><i class="fa fa-envelope me-3"></i>ecoserviciodelimpieza@outlook.com</p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Enlaces Rápidos</h4>
+            <a class="btn btn-link" href="index.html#empresa">Sobre Nosotros</a>
+            <a class="btn btn-link" href="index.html#servicio">Servicios</a>
+            <a class="btn btn-link" href="index.html#contacto">Contacto</a>
+            <a class="btn btn-link" href="service.html">Servicio Doméstico</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Horas de Atención</h4>
+            <p class="mb-1">Lunes - Viernes</p>
+            <h6 class="text-light">08:00 AM - 08:00 PM</h6>
+            <p class="mb-1">Sábados</p>
+            <h6 class="text-light">09:00 AM - 01:00 PM</h6>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Eco Limpia</a>, Todos los derechos reservados.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Diseñado por <span class="text-primary fw-bold text-decoration-underline" style="cursor: pointer;">Antigravity AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

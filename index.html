@@ -59,32 +59,30 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light d-none d-lg-block">
-      <div class="row align-items-center top-bar">
-        <div class="col-lg-3 col-md-12 text-center text-lg-start">
-          <a href="" class="navbar-brand m-0 p-0">
-            <img src="./img/logo.jpg" alt="" class="img-fluid imglogo" />
-          </a>
-        </div>
-        <div class="col-lg-9 col-md-12 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <i class="fas fa-phone text-primary me-2"></i>
-            <p class="m-0">0388-154499915</p>
-          </div>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/3884201959" class="whatsapp-float shadow-lg" target="_blank" aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <i class="far fa-envelope-open text-primary me-2"></i>
-            <p class="m-0">ECOSERVICIODELIMPIEZA@OUTLOOK.COM</p>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light d-none d-lg-block py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-start">
+            <div class="d-inline-flex align-items-center me-4">
+              <i class="fas fa-phone-alt text-secondary me-2"></i>
+              <small>0388-154499915</small>
+            </div>
+            <div class="d-inline-flex align-items-center">
+              <i class="far fa-envelope text-secondary me-2"></i>
+              <small>ecoserviciodelimpieza@outlook.com</small>
+            </div>
           </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-           
-            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
+          <div class="col-lg-4 text-end">
+            <div class="d-inline-flex align-items-center">
+              <a class="btn btn-sm-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-sm-square btn-outline-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -92,51 +90,35 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid nav-bar bg-light">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4"
-      >
-        <a
-          href=""
-          class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none"
-        >
-          <img src="./img/logo.jpg" alt="" class="img-fluid imglogo" />
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm glass-morphism py-2 px-4">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="./img/logo.jpg" alt="Eco Limpia Logo" class="imglogo me-2" />
+          <span class="h4 m-0 text-primary fw-bold d-none d-sm-inline">ECO <span class="text-secondary">LIMPIA</span></span>
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span class="fa fa-bars"></span>
+          <span class="fa fa-bars text-primary"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav me-auto">
+          <div class="navbar-nav ms-auto py-4 py-lg-0">
             <a href="index.html" class="nav-item nav-link active">Inicio</a>
-            <a href="#empresa" class="nav-item nav-link">Nuestra empresa</a>
+            <a href="#empresa" class="nav-item nav-link">Empresa</a>
             <a href="#servicio" class="nav-item nav-link">Servicios</a>
-
-            <a href="service.html" class="nav-item nav-link">Servicio domestico</a>
-
+            <a href="service.html" class="nav-item nav-link">Doméstico</a>
             <a href="#contacto" class="nav-item nav-link">Contacto</a>
           </div>
-          <div
-            class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center"
-          >
-            <div
-              class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-              style="width: 45px; height: 45px"
-            >
-              <i class="fa fa-phone-alt text-primary"></i>
-            </div>
-            <div class="ms-3">
-              <p class="mb-1 text-white">Celular</p>
-              <h5 class="m-0 text-secondary">3884201959</h5>
-            </div>
-          </div>
+          <a href="#contacto" class="btn btn-premium ms-lg-4 d-none d-lg-block">Solicitar Presupuesto</a>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
@@ -184,77 +166,34 @@
     </div> -->
     <!-- Carousel End -->
 
+    <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
       <div class="owl-carousel header-carousel position-relative">
         <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid"
-            src="img/limpia1.jpeg"
-            alt=""
-            class="img-limpia"
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(0, 0, 0, 0.4)"
-          >
+          <img class="img-fluid w-100" src="img/limpia1.jpeg" alt="Limpieza Profesional 1" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.3))">
             <div class="container">
-              <div class="row justify-content-start position-relative txtb">
+              <div class="row justify-content-start">
                 <div class="col-10 col-lg-8">
-                  <h1
-                    class="text-white text-uppercase mb-3 animated txt slideInDown"
-                  >
-                    Servicios integrales de limpieza para Empresas
-                  </h1>
-                  <h2
-                    class="display-3 text-white animated slideInDown mb-4 txt2"
-                  >
-                    Bienvenidos a Eco Limpia
-                  </h2>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2 txt">
-                    Deja la limpieza en nuestras manos. Vos disfruta del brillo.
-                  </p>
-                  <a
-                    href=""
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >¡Reserva tu servicio de limpieza ya!</a
-                  >
+                  <h6 class="text-secondary text-uppercase fw-bold mb-3 animated slideInDown" style="letter-spacing: 3px;">Servicios de Limpieza VIP</h6>
+                  <h1 class="display-3 text-white fw-bold mb-4 animated slideInDown">Bienvenidos a <span class="text-primary">Eco Limpia</span></h1>
+                  <p class="fs-5 text-white mb-4 pb-2 animated slideInUp">Soluciones profesionales para empresas y hogares. Deja el brillo en nuestras manos.</p>
+                  <a href="#contacto" class="btn btn-premium py-3 px-5 animated slideInLeft">¡Reserva Ahora!</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid"
-            src="img/imgheader.jpeg"
-            alt=""
-            class="img-limpia"
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(0, 0, 0, 0.4)"
-          >
+          <img class="img-fluid w-100" src="img/imgheader.jpeg" alt="Limpieza Profesional 2" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.3))">
             <div class="container">
-              <div class="row justify-content-start position-relative txtb">
+              <div class="row justify-content-start">
                 <div class="col-10 col-lg-8">
-                  <h1
-                    class="text-white text-uppercase mb-3 animated txt slideInDown"
-                  >
-                    Servicios integrales de limpieza para Empresas
-                  </h1>
-                  <h2
-                    class="display-3 text-white animated slideInDown mb-4 txt2"
-                  >
-                    Bienvenidos a Eco Limpia
-                  </h2>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2 txt">
-                    Deja la limpieza en nuestras manos. Vos disfruta del brillo.
-                  </p>
-                  <a
-                    href=""
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >¡Reserva tu servicio de limpieza ya!</a
-                  >
+                  <h6 class="text-secondary text-uppercase fw-bold mb-3 animated slideInDown" style="letter-spacing: 3px;">Calidad Garantizada</h6>
+                  <h1 class="display-3 text-white fw-bold mb-4 animated slideInDown">Limpieza profunda de <span class="text-primary">Post-Obra</span></h1>
+                  <p class="fs-5 text-white mb-4 pb-2 animated slideInUp">Equipos especializados y maquinaria de última generación para resultados óptimos.</p>
+                  <a href="#servicio" class="btn btn-premium py-3 px-5 animated slideInLeft">Ver Servicios</a>
                 </div>
               </div>
             </div>
@@ -262,66 +201,97 @@
         </div>
       </div>
     </div>
+    <!-- Carousel End -->
+
     <!-- About Start -->
     <div class="container-xxl py-5" id="empresa">
       <div class="container">
-        <div class="row g-5">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-secondary text-uppercase">Nuestra Empresa</h6>
-            <h1 class="mb-4">
-              &quot; Ser la empresa de Servicio de Limpieza preferida por las
-              grandes y pequeñas organizaciones &quot;
-            </h1>
-            <p class="mb-4">
-              Eco Limpia es una empresa especializada que ofrece el servicio de
-              limpieza y mantenimiento a nivel industrial y personalizado, que
-              atiende las áreas de limpieza final de obra, limpieza para
-              consorcios, edificios, casas,departamentos etc., demás limpieza
-              para industrias, empresas, oficinas,  grandes predios para
-              eventos, depósitos,  bancos, colegios, hospitales, clínicas y
-              locales comerciales.
+            <h6 class="text-secondary text-uppercase fw-bold mb-3" style="letter-spacing: 2px;">Sobre Nosotros</h6>
+            <h1 class="mb-4 text-primary">Liderazgo en Servicios de Limpieza Integral</h1>
+            <p class="mb-4 text-muted">
+              <strong>Eco Limpia</strong> es una empresa especializada que ofrece servicios de limpieza y mantenimiento a nivel industrial y personalizado. Atendemos finales de obra, consorcios, edificios, oficinas, depósitos, bancos, colegios y clínicas.
             </p>
-
-            <p mt-6>
-              Todas las prestaciones son realizadas con mano de obra
-              especializada y maquinarias de última generación acorde acada
-              servicio, sumado a la utilización de productos de primera calidad
-              certificada, dando como resultado la máximaeficiencia y óptimos
-              resultados en todos nuestros servicios.
-            </p>
-            <p mt-5>
-              Es nuestro principal compromiso, lograr que nuestros clientes se
-              desentiendan de las tareas de limpieza y mantenimiento, ya sea en
-              forma regular o para trabajos  especiales.
-            </p>
-            <h6 class="text-secondary text-uppercase">Nuestra mision</h6>
-            <h2 mt-5 h5a>
-              &quot; Diseñar y proveer un Servicio de Limpieza de exelencia a
-              fin de satifacer las necesidades de cada cliente, gestionando
-              efecientemente los procesos, recursos y capital humano, siendo
-              competitivos, confiables e innovadores, logrando la fidelizacion
-              interna externa &quot;
-            </h2>
-          
-          </div>
-          <div class="col-lg-6 pt-4" style="min-height: 500px">
-            <div
-              class="position-relative h-100 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/a.jpg"
-                style="object-fit: cover; padding: 0 0 50px 100px"
-                alt=""
-              />
-              <img
-                class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
-                src="img/c.jpg"
-                style="object-fit: cover"
-                alt=""
-              />
+            <div class="row g-4 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h6 class="mb-0">Mano de Obra Especializada</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h6 class="mb-0">Tecnología de Punta</h6>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h6 class="mb-0">Productos Certificados</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h6 class="mb-0">Atención Personalizada</h6>
+                </div>
+              </div>
             </div>
+            <div class="bg-light p-4 rounded-3 border-start border-primary border-5">
+              <h5 class="italic mb-0 text-dark">"Nuestro compromiso es que el cliente se desentienda del mantenimiento, confiando plenamente en nuestra eficiencia."</h5>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6 text-end">
+                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/a.jpg" style="margin-top: 25%;" />
+              </div>
+              <div class="col-6 text-start">
+                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/c.jpg" />
+              </div>
+              <div class="col-6 text-end">
+                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/z.jpeg" />
+              </div>
+              <div class="col-6 text-start">
+                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/x.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission Start -->
+    <div class="container-xxl py-5 bg-light">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 order-lg-2 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase fw-bold mb-3">Nuestra Misión</h6>
+            <h2 class="mb-4">Excelencia en Cada Detalle</h2>
+            <p class="mb-5 lead">"Diseñar y proveer un servicio de limpieza de excelencia a fin de satisfacer las necesidades de cada cliente, gestionando eficientemente procesos, recursos y capital humano."</p>
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="bg-white p-4 rounded shadow-sm d-flex">
+                  <i class="fa fa-bullseye fa-2x text-primary me-3"></i>
+                  <div>
+                    <h5 class="mb-2">Visión de Futuro</h5>
+                    <p class="mb-0">Ser la empresa de limpieza preferida por grandes y pequeñas organizaciones en toda la región.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+             <video class="w-100 rounded shadow-lg" controls>
+                <source src="./img/v1.mp4" type="video/mp4" />
+                Tu navegador no soporta la reproducción de videos.
+              </video>
           </div>
         </div>
       </div>
@@ -445,465 +415,339 @@
     <!-- Fact End -->
 
     <!-- Service Start -->
-    <div class="container-fluid py-5 px-4 px-lg-0">
-      <div class="row g-0">
-        <div class="col-lg-3 d-none d-lg-flex">
-          <div
-            class="d-flex align-items-center justify-content-center bg-primary w-100 h-100"
-          >
-            <h1
-              class="display-3 text-white m-0"
-              style="transform: rotate(-90deg)"
-            >
-              12 Años de experiencia
-            </h1>
-          </div>
+    <div class="container-xxl py-5" id="servicio">
+      <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+          <h6 class="text-secondary text-uppercase fw-bold">Nuestros Servicios</h6>
+          <h1 class="display-5 mb-4">Soluciones Integrales para un Entorno Limpio</h1>
         </div>
-        <div class="col-md-12 col-lg-9">
-          <div class="ms-lg-5 ps-lg-5">
-            <div
-              class="text-center text-lg-start wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <h6 class="text-secondary text-uppercase">
-                Servicios principales
-              </h6>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item shadow-sm">
+              <div class="service-icon text-primary h3 m-0">
+                <i class="fas fa-broom"></i>
+              </div>
+              <h4 class="mb-3">Limpieza Post-Obra</h4>
+              <p>Todo tipo de construcción: Edificios, Fábricas, Depósitos, Casas y Departamentos particulares.</p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-check text-secondary me-2"></i>Calidad Certificada</li>
+                <li><i class="fa fa-check text-secondary me-2"></i>Entrega Inmediata</li>
+              </ul>
             </div>
-            <div
-              class="owl-carousel service-carousel position-relative wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div class="bg-light p-4">
-                <div
-                  class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
-                  style="width: 75px; height: 75px"
-                >
-                  <i class="fas fa-broom fa-2x text-primary"></i>
-                </div>
-                <h4 class="mb-3">LIMPIEZA FINAL DE OBRA</h4>
-                <p>
-                  Todo tipo de construcción: Edificios, Fábricas, Depósitos,
-                  Casas y Departamentos particulares, etc.
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Calidad de
-                  servicio
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Clientes
-                  satisfechos
-                </p>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item shadow-sm">
+              <div class="service-icon text-primary h3 m-0">
+                <i class="fas fa-calendar-alt"></i>
               </div>
-              <div class="bg-light p-4">
-                <div
-                  class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
-                  style="width: 75px; height: 75px"
-                >
-                  <i class="fas fa-calendar fa-2x text-primary"></i>
-                </div>
-                <h4 class="mb-3">LIMPIEZA EVENTUAL PARA EVENTOS Y PREDIOS</h4>
-                <p>
-                  Servicio especializado que se ofrece de manera puntual antes,
-                  durante y después de eventos, o en espacios de grandes
-                  dimensiones como predios y terrenos.
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Calidad de
-                  servicio
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Clientes
-                  satisfechos
-                </p>
+              <h4 class="mb-3">Eventos y Predios</h4>
+              <p>Servicio puntual para eventos masivos, predios industriales y terrenos de grandes dimensiones.</p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-check text-secondary me-2"></i>Personal Uniformado</li>
+                <li><i class="fa fa-check text-secondary me-2"></i>Logística Integral</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item shadow-sm">
+              <div class="service-icon text-primary h3 m-0">
+                <i class="fas fa-building"></i>
               </div>
-              <div class="bg-light p-4">
-                <div
-                  class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
-                  style="width: 75px; height: 75px"
-                >
-                  <i class="fas fa-building fa-2x text-primary"></i>
-                </div>
-                <h4 class="mb-3">
-                  LIMPIEZA INTEGRAL DE CONSORCIOS Y EDIFICIOS
-                </h4>
-                <p>
-                  Colegios, Oficinas, Edificio, Propiedades horizontales,
-                  Colegios, Oficinas, etc.
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Calidad de
-                  servicio
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Clientes
-                  satisfechos
-                </p>
+              <h4 class="mb-3">Consorcios y Edificios</h4>
+              <p>Mantenimiento preventivo y limpieza profunda de áreas comunes, palieres y fachadas.</p>
+              <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-check text-secondary me-2"></i>Mantenimiento Diario</li>
+                <li><i class="fa fa-check text-secondary me-2"></i>Atención 24/7</li>
+              </ul>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item shadow-sm">
+              <div class="service-icon text-primary h3 m-0">
+                <i class="fas fa-industry"></i>
               </div>
-              <div class="bg-light p-4">
-                <div
-                  class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
-                  style="width: 75px; height: 75px"
-                >
-                  <i class="fas fa-industry fa-2x text-primary"></i>
-                </div>
-                <h4 class="mb-3">
-                  LIMPIEZA INTEGRAL DE  EMPRESAS E INDUSTRIAS
-                </h4>
-                <p>
-                  Galpones industriales, Fábricas,  Depósitos, Empresas,
-                  Oficinas Comerciales, Bancos, Supermercados, Locales, etc.
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Calidad de
-                  servicio
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Clientes
-                  satisfechos
-                </p>
+              <h4 class="mb-3">Empresas e industrias</h4>
+              <p>Galpones, bancos, oficinas comerciales y supermercados con maquinaria de alto rendimiento.</p>
+               <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-check text-secondary me-2"></i>Equipos de Alta Presión</li>
+                <li><i class="fa fa-check text-secondary me-2"></i>Normas de Seguridad</li>
+              </ul>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item shadow-sm">
+              <div class="service-icon text-primary h3 m-0">
+                <i class="fas fa-hospital"></i>
               </div>
-              <div class="bg-light p-4">
-                <div
-                  class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
-                  style="width: 75px; height: 75px"
-                >
-                  <i class="fas fa-hospital fa-2x text-primary"></i>
-                </div>
-                <h4 class="mb-3">
-                  LIMPIEZA ESPECIALIZADAS DE CLINICAS Y HOSPITALES
-                </h4>
-                <p>
-                  Hospitales, Clínicas, Centros de Salud, Centros de
-                  diagnóstico, etc.
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Calidad de
-                  servicio
-                </p>
-                <p class="text-primary fw-medium">
-                  <i class="fa fa-check text-success me-2"></i>Clientes
-                  satisfechos
-                </p>
+              <h4 class="mb-3">Clínicas y Hospitales</h4>
+              <p>Limpieza técnica especializada en desinfección de centros de salud y diagnóstico.</p>
+               <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-check text-secondary me-2"></i>Sanitización Profunda</li>
+                <li><i class="fa fa-check text-secondary me-2"></i>Protocolos Médicos</li>
+              </ul>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item shadow-sm">
+              <div class="service-icon text-primary h3 m-0">
+                <i class="fas fa-house-user"></i>
               </div>
+              <h4 class="mb-3">Servicio Doméstico</h4>
+              <p>Limpieza de confianza para hogares y departamentos con personal altamente calificado.</p>
+               <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-check text-secondary me-2"></i>Personal Referenciado</li>
+                <li><i class="fa fa-check text-secondary me-2"></i>Flexibilidad Horaria</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Service End -->
+    <!-- Values Start -->
     <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-secondary text-uppercase">Nuestrs valores</h6>
+            <h6 class="text-secondary text-uppercase fw-bold mb-3">Nuestros Valores</h6>
+            <h2 class="mb-4">Lo que nos define</h2>
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-handshake text-white"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Servicio y Cortesía</h6>
+                    <p class="mb-0 text-muted small">Excelencia y amabilidad en cada interacción comercial y operativa.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-shield-alt text-white"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Seguridad y Calidad</h6>
+                    <p class="mb-0 text-muted small">Promovemos el trabajo seguro y la mejora continua en nuestros procesos.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="btn-sm-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-leaf text-white"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Medio Ambiente</h6>
+                    <p class="mb-0 text-muted small">Acciones responsables para el cuidado de nuestro entorno.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-            <p class="mb-4">
-              SERVICIO : Exelencia en el servicio porestado
-            </p>
-
-            <p mt-6>
-              CALIDAD : Mejora contínua
-            </p>
-            <p mt-5>
-              SEGURIDAD : Promover el trabajo seguro
-            </p>
-            <p class="mb-4">
-              MEDIO AMBIENTE : Acciones responsables para el cuidado del entorno
-            </p>
-            <p class="mb-4">
-              CORTESIA Y RESPETO : La amabilidad como sello en la interacción
-            </p>
-            <p class="mb-4">
-              TRANSPARENCIA Y HONESTIDAD : Principios que guian nuestra conducta en el
-              accionar comercial y operativo
-            </p>
-            <h6 class="text-secondary text-uppercase">Nuestra Politica</h6>
-            <h1 class="mb-4">
-              &quot; Ser la empresa de Servicio de Limpieza preferida por las
-              grandes y pequeñas organizaciones &quot;
-            </h1>
-
-            <p mt-6>
-              * Proveer un Servicio de Limpieza eficiente que logre la sastifación del cliente
-            </p>
-            <p mt-5>
-              * Promoveer el conocimiento y desarrollo de las personas
-            </p>
-            <p class="mb-4">
-              * Fomentar la innovación , mejorar , estandarización y actualización de los procesos
-              a través del Sistema de gestion de Calidad.
-            </p>
-            <p class="mb-4">
-              * Cumplir las normativas vigentes
-            </p>
-            
-           
+            <h6 class="text-secondary text-uppercase fw-bold mt-5 mb-3">Nuestra Política</h6>
+            <div class="bg-white p-4 rounded shadow-sm border-start border-secondary border-5">
+              <p class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Satifacción garantizada del cliente.</p>
+              <p class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Desarrollo continuo de nuestro capital humano.</p>
+              <p class="mb-0"><i class="fa fa-check-circle text-primary me-2"></i>Innovación y estandarización de procesos.</p>
+            </div>
           </div>
-          <div class="col-lg-6 pt-4" style="min-height: 500px">
-            <div
-              class="position-relative h-100 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/grua.jpeg"
-                style="object-fit: cover; padding: 0 0 50px 100px"
-                alt=""
-              />
-              <img
-                class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
-                src="img/señoraeco.jpeg"
-                style="object-fit: cover"
-                alt=""
-              />
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="position-relative h-100">
+              <img class="img-fluid rounded shadow-lg w-100 h-100" src="img/grua.jpeg" style="object-fit: cover;" alt="Operativo de Limpieza" />
+              <div class="position-absolute start-0 bottom-0 bg-white p-3 rounded-end shadow" style="width: 60%;">
+                <img class="img-fluid rounded" src="img/señoraeco.jpeg" alt="Personal de Eco Limpia" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Values End -->
     <!-- Booking Start -->
-    <div class="container-fluid my-5 px-0 mt-11">
-     
-        <div class="row justify-content-center cacs">
-          <div class="col-lg-8">
-            <div class="bg-light text-center p-5">
-              <h1 class="mb-4">Comenzemos a trabajar juntos </h1>
-              <form>
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control border-0"
-                      placeholder="Nombre"
-                      style="height: 55px"
-                    />
+    <div class="container-xxl py-5" id="contacto">
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+          <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-primary rounded-4 overflow-hidden shadow-lg">
+              <div class="row g-0">
+                <div class="col-md-6 bg-dark p-5 d-flex flex-column justify-content-center text-white">
+                  <h2 class="text-white mb-4">¡Comencemos a trabajar juntos!</h2>
+                  <p class="mb-5">Estamos listos para brindarte la mejor solución en limpieza integral. Solicita tu cotización ahora.</p>
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="btn-sm-square bg-primary rounded-circle me-3">
+                      <i class="fa fa-phone-alt"></i>
+                    </div>
+                    <span>3884201959</span>
                   </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control border-0"
-                      placeholder="Empresa"
-                      style="height: 55px"
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      class="form-control border-0"
-                      placeholder="Email"
-                      style="height: 55px"
-                    />
-                  </div>
-                  
-                  
-                  <div class="col-12">
-                    <textarea
-                      class="form-control border-0"
-                      placeholder="Mensaje..."
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Enviar
-                    </button>
+                  <div class="d-flex align-items-center">
+                    <div class="btn-sm-square bg-primary rounded-circle me-3">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <span>ecoserviciodelimpieza@outlook.com</span>
                   </div>
                 </div>
-              </form>
+                <div class="col-md-6 bg-white p-5">
+                  <form>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Nombre">
+                          <label for="name">Tu Nombre</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="email" class="form-control border-0 bg-light" id="email" placeholder="Email">
+                          <label for="email">Tu Email</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Empresa">
+                          <label for="subject">Empresa / Particular</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea class="form-control border-0 bg-light" placeholder="Mensaje" id="message" style="height: 120px"></textarea>
+                          <label for="message">Mensaje</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-premium w-100 py-3" type="submit">Enviar Mensaje</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Booking End -->
+    <!-- Booking End -->
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
       <div class="container">
-        
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+          <h6 class="text-secondary text-uppercase fw-bold">Nuestro Equipo</h6>
+          <h1 class="display-5 mb-4">Profesionales Comprometidos</h1>
+        </div>
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img class="img-fluid" src="img/team.jpeg" alt="" />
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card-premium h-100">
+              <img class="img-fluid" src="img/team.jpeg" alt="Equipo Eco Limpia 1" style="height: 300px; object-fit: cover; width: 100%;" />
+              <div class="p-4 text-center">
+                <h5 class="mb-0">Personal Especializado</h5>
+                <small class="text-muted">Limpieza Industrial</small>
               </div>
-              
             </div>
           </div>
-         
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img class="img-fluid" src="img/b.jpg" alt="" />
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card-premium h-100">
+              <img class="img-fluid" src="img/b.jpg" alt="Equipo Eco Limpia 2" style="height: 300px; object-fit: cover; width: 100%;" />
+              <div class="p-4 text-center">
+                <h5 class="mb-0">Compromiso Total</h5>
+                <small class="text-muted">Atención al Cliente</small>
               </div>
-              
             </div>
-          </div> 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img class="img-fluid" src="img/tean2.jpeg" alt=""  width="345px"/>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="card-premium h-100">
+              <img class="img-fluid" src="img/tean2.jpeg" alt="Equipo Eco Limpia 3" style="height: 300px; object-fit: cover; width: 100%;" />
+              <div class="p-4 text-center">
+                <h5 class="mb-0">Equipamiento Moderno</h5>
+                <small class="text-muted">Servicios Técnicos</small>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Team End -->
-
-    <!-- Testimonial Start -->
+    <!-- Partners Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container">
-        <div class="text-center">
-          <h6 class="text-secondary text-uppercase">Empresas con las que trabajamos</h6>
-         
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+          <h6 class="text-secondary text-uppercase fw-bold">Nuestros Aliados</h6>
+          <h1 class="display-6 mb-4">Empresas que confían en nosotros</h1>
         </div>
-        <div
-          class="owl-carousel testimonial-carousel position-relative wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
+        <div class="owl-carousel testimonial-carousel">
           <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-               Gobierno de Jujuy
-              </p>
+            <div class="bg-light p-4 rounded-4 mb-4 shadow-sm border h-100">
+               <img class="img-fluid mx-auto mb-3" src="img/gobjuju.png" style="width: 80px; height: 80px; object-fit: contain;" alt="Gobierno de Jujuy" />
+               <h6 class="mb-0">Gobierno de Jujuy</h6>
             </div>
-            <img
-              class="bg-light  p-2 mx-auto mb-2 imgtbj"
-              src="img/gobjuju.png"
-              style="width: 80px; height: 80px"
-            />
-            
-           
-          </div>
-          
-          <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-                Ocasa Jujuy
-              </p>
-            </div>
-            <img
-              class="bg-light  p-2 mx-auto mb-2 imgtbj"
-              src="img/ocasa.png"
-              style="width: 80px; height: 80px"
-            />
-           
-         
           </div>
           <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-                Contructora Rovella
-              </p>
+            <div class="bg-light p-4 rounded-4 mb-4 shadow-sm border h-100">
+               <img class="img-fluid mx-auto mb-3" src="img/ocasa.png" style="width: 80px; height: 80px; object-fit: contain;" alt="Ocasa Jujuy" />
+               <h6 class="mb-0">Ocasa Jujuy</h6>
             </div>
-            <img
-              class="bg-light  p-2 mx-auto mb-2 imgtbj"
-              src="img/construc.png"
-              style="width: 80px; height: 80px"
-            />
-           
-         
           </div>
           <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-                Constructora Tecno Pint
-              </p>
+            <div class="bg-light p-4 rounded-4 mb-4 shadow-sm border h-100">
+               <img class="img-fluid mx-auto mb-3" src="img/tegnopin.png" style="width: 80px; height: 80px; object-fit: contain;" alt="Tecno Pint" />
+               <h6 class="mb-0">Tecno Pint</h6>
             </div>
-            <img
-              class="bg-light  p-2 mx-auto mb-2 imgtbj"
-              src="img/tegnopin.png"
-              style="width: 80px; height: 80px"
-            />
-           
-         
           </div>
           <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-                San Cristobal seguros
-              </p>
+            <div class="bg-light p-4 rounded-4 mb-4 shadow-sm border h-100">
+               <img class="img-fluid mx-auto mb-3" src="img/toyota.png" style="width: 80px; height: 80px; object-fit: contain;" alt="Toyota" />
+               <h6 class="mb-0">Toyota</h6>
             </div>
-            <img
-              class="bg-light  p-2 mx-auto mb-2 imgtbj"
-              src="img/san-cristobal-sitios-seguros.jpg"
-              style="width: 80px; height: 80px"
-            />
-           
-         
           </div>
-          <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-             Toyota
-              </p>
+           <div class="testimonial-item text-center">
+            <div class="bg-light p-4 rounded-4 mb-4 shadow-sm border h-100">
+               <img class="img-fluid mx-auto mb-3" src="img/peugeot.png" style="width: 80px; height: 80px; object-fit: contain;" alt="Peugeot" />
+               <h6 class="mb-0">Peugeot</h6>
             </div>
-            <img
-              class="bg-light p-2 mx-auto mb-2 imgtbj"
-              src="img/toyota.png"
-              style="width: 80px; height: 80px"
-            />
-          
-           
           </div>
-          <div class="testimonial-item text-center">
-            <div class="testimonial-text bg-light text-center p-4 mb-4">
-              <p class="mb-0">
-               Peugeot
-              </p>
-            </div>
-            <img
-              class="bg-light p-2 mx-auto mb-2 imgtbj"
-              src="img/peugeot.png"
-              style="width: 80px; height: 80px"
-            />
-            
-          </div>
-          
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Partners End -->
 
     <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Contacto</h4>
-            
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>3884201959
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>ECOSERVICIODELIMPIEZA@OUTLOOK.COM
-            </p>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Contacto</h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>San Salvador de Jujuy, Jujuy</p>
+            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>3884201959</p>
+            <p class="mb-2"><i class="fa fa-envelope me-3"></i>ecoserviciodelimpieza@outlook.com</p>
             <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              
+              <a class="btn btn-outline-light btn-social rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-          
-         
-          
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Enlaces Rápidos</h4>
+            <a class="btn btn-link" href="#empresa">Sobre Nosotros</a>
+            <a class="btn btn-link" href="#servicio">Servicios</a>
+            <a class="btn btn-link" href="#contacto">Contacto</a>
+            <a class="btn btn-link" href="service.html">Servicio Doméstico</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Horas de Atención</h4>
+            <p class="mb-1">Lunes - Viernes</p>
+            <h6 class="text-light">08:00 AM - 08:00 PM</h6>
+            <p class="mb-1">Sábados</p>
+            <h6 class="text-light">09:00 AM - 01:00 PM</h6>
+          </div>
         </div>
       </div>
       <div class="container">
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Eco limpia</a>, Todos los derechos reservados.
+              &copy; <a class="border-bottom" href="#">Eco Limpia</a>, Todos los derechos reservados.
             </div>
-            
+            <div class="col-md-6 text-center text-md-end">
+              Diseñado por <span class="text-primary fw-bold text-decoration-underline" style="cursor: pointer;">Antigravity AI</span>
+            </div>
           </div>
         </div>
       </div>
